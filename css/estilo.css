@@ -487,10 +487,15 @@ iframe {
         margin-bottom: 20px;
     }
 
-    /* Estilos responsive cervezas.html */
+    /* Estilos responsive cervezas.html, snacks.html y promociones.html */
 
     .contenedorProductos {
-        grid-template-columns: repeat(2 , 1fr);
+        grid-template-columns: repeat(1 , 1fr);
+        place-items: center;
+    }
+
+    .boxProductos {
+        width: 80%;
     }
     
 
@@ -551,7 +556,12 @@ iframe {
     }
 
     .contactoUbicacion {
+        width: 100%;
         margin-top: 150px;
+    }
+
+    iframe {
+        width: 90%;
     }
 }
 
