@@ -1,0 +1,626 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 115px;
+    position: fixed;
+    top: 0;
+    background-color: #C2924D;
+    z-index: 1;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28238, 239, 231, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.btnNav {
+    border: none;
+}
+
+.subLista {
+    border: none;
+}
+
+.subLista li {
+    display: grid;
+}
+
+body {
+    background-color: #303030;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h1, h2 {
+    color: #C2924D;
+    margin-bottom: 20px;
+}
+
+a, p {
+    color: #EEEFE7;
+}
+
+.navTextColor {
+    color: #EEEFE7;
+}
+
+.subLista {
+    background-color: #c2924D;
+    padding-right: 10px;
+}
+
+.logo {
+    width: 115px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 0 20px;
+}
+
+a:hover {
+    color: #97501A;
+}
+
+main {
+    margin: 160px 20px 20px 20px;
+}
+
+footer {
+    background-color: #EEEFE7;
+    padding: 20px 15px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.linkFooter {
+    color: #C2924D;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: #C2924D;
+}
+
+.descripcion {
+    font-size: 20px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #C2924D;
+    margin: 10px 0;
+}
+
+/* Estilos index.css */
+
+.tituloBienvenida {
+    text-align: center;
+}
+
+.containerBienvenida {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.fraseBienvenida {
+    width: 50%;
+    text-align: center;
+    color:#EEEFE7;
+    text-shadow: 2px 2px 4px rgba(194, 146, 77, 0.5);
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.containerSecciones {
+    margin-bottom: 70px;
+}
+
+.boxSecciones {
+    width: 100%;
+    margin: 100px 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgSeccion {
+    width: 45%;
+    object-fit: contain;
+}
+
+.parrafoSeccion {
+    font-size: 1.3rem;
+    margin: 0 25px 0 25px;
+    
+}
+
+strong {
+    color: #C2924D;
+}
+
+.seccionNavImg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.containerNavImgProductos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.navImg {
+    width: 100%;
+    height: 90%;
+}
+
+.navImg:hover {
+    transform: scale(1.1);
+}
+
+.navProductos {
+    margin: 25px 15px;
+}
+
+
+/* Estilos nosotros.html */
+
+.tituloHistoria {
+    font-size: 3rem;
+}
+
+.containerHistoria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+.contenidoHistoria {
+    display: flex;
+    flex-direction: row;
+    margin: 0 25px;
+}
+
+.historia {
+    width: 60%;
+    margin-right: 30px;
+}
+
+video {
+    width: 40%; 
+}
+
+
+/* Estilos cervezas.html, snacks.html y productos.html */
+
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2rem 0;
+    gap: 15px;
+}
+
+.boxProductos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #252525;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 10px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+}
+
+.imgProductos {
+    width: 100%;
+    height: 200px;
+}
+
+.descripcion {
+    text-align: center;
+}
+
+.botonComprar {
+    align-self: flex-end;
+    margin: 10px;
+    border: none;
+    border: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    background-color: #EEEFE7;
+    color: #C2924D;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botonComprar:hover {
+    background-color: #C2924D;
+    color: #EEEFE7;
+}
+
+
+/* Estilos contacto.html */
+
+.contenedorForm {
+    width: 40%;
+    height: 580px;
+    padding: 5px 20px;
+}
+
+.contenedorForm label {
+    display: block;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    color: #C2924D;
+    font-weight: bold;
+
+}
+
+.contenedorForm, .contactoUbicacion {
+    display: inline-block;
+}
+.input {
+    display: inline-block;
+    background-color: #948E7A;
+    color: #97501A;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+    padding: 5px 0;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 90%;
+    background-color: #948E7A;
+    color: #97501A;
+    font-weight: bold;
+}
+
+.enviar, .restablecer {
+    display: inline-block;
+    background-color: #C2924D;
+    font-weight: bold;
+    color: #EEEFE7;
+    cursor: pointer;
+    width: 90%;
+    padding: 5px 0;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contactoUbicacion {
+    width: 50%;
+}
+
+iframe {
+    width: 100%;
+}
+
+.contacto {
+    display: inline;
+    color: #C2924D;
+    margin: 0 5px;
+}
+
+.fa-whatsapp, .fa-envelope {
+    color: #C2924D;
+    margin: 15px 5px 15px 15px;
+}
+
+.tituloUbicacion {
+    margin: 15px 0;
+}
+
+/* Estilos servicios.html */
+
+.containerServicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloServicios {
+    font-size: 3rem;
+}
+
+.boxCards {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    background-color: #252525;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+}
+
+.containerImg {
+    width: 45%;
+    height: auto;
+}
+
+.imgServicios {
+    width: 100%;
+    height: 100%;
+}
+
+.containerDescripcion {
+    width: 55%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloCardServicios {
+    text-align: center;
+    color: #97501A;
+}
+
+.subTituloServicios {
+    font-size: 1.5rem;
+    color: #C2924D;
+}
+
+.listaServicios{
+    color: #C2924D;
+    font-style: italic;
+    font-weight: 400;
+    list-style-type: "\2713";
+    padding-left: 10px;
+}
+
+.containerBtnServicios {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btnServicios {
+    background-color: #EEEFE7;
+    width: 7rem;
+    text-transform: uppercase;
+    color: #C2924D;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+.btnServicios:hover {
+    background-color: #C2924D;
+    color: #EEEFE7;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 767px) {
+    
+    header {
+        height: auto;
+    }
+
+    main {
+        margin-bottom: 100px;
+    }
+
+    .navbar-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28238, 239, 231, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .btnNav {
+        border-color: #EEEFE7;
+    }
+
+
+    /* estilos index.html */
+
+    .fraseBienvenida {
+        width: 95%;
+        margin-bottom: 60px;
+    }
+
+    .containersecciones {
+        margin: 35px 0;
+    }
+
+    .imgSeccion {
+        width: 90%;
+    }
+
+    .parrafoSeccion {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .containerNavImgProductos {
+        flex-direction: column;
+    }
+    
+    .navProductos {
+        margin: 0 0 15px 0;
+    }
+    
+    .navImg {
+        width: 100%;
+        height: 100%;
+        margin: 40px 0;
+    }
+
+    footer {
+        display: grid;
+    }
+
+    footer a {
+        margin-bottom: 20px;
+    }
+
+    /* Estilos responsive cervezas.html */
+
+    .contenedorProductos {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    
+
+    /* Estilos responsive servicios.html */
+
+    .boxSecciones .imgSeccion:nth-child(2n) {
+        order: 2;
+    }
+        
+    .boxSecciones .parrafoSeccion:nth-child(2n+1) {
+        order: 3;
+    }
+
+    .containerImg {
+        width: 100%;
+        padding: 0;
+    }
+
+    .containerDescripcion {
+        width: 100%;
+    }
+
+    /* Estilos responsive nosotros.html */
+
+    .contenidoHistoria {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .historia {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    video {
+        width: 90%;
+    }
+
+
+    /* Estilos responsive contacto.html */
+
+    .contenedorContacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenedorForm {
+        width: 100%;
+    }
+
+    .contactoUbicacion {
+        margin-top: 150px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    header {
+        height: auto;
+    }
+
+    /* Estilos responsive index.html */
+
+    .fraseBienvenida {
+        width: 80%;
+    }
+
+    .boxSecciones {
+        margin: 50px 0;
+    }
+
+    .parrafoSeccion {
+        margin-right: 0;
+    }
+
+    .nav-productos {
+        margin: 0 200px;
+    }
+
+    
+    /* Estilos responsive cervezas.html */
+
+    .contenedorProductos {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+
+    /* Estilos responsive nosotros.html */
+
+    .contenidoHistoria {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .historia {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    video {
+        width: 90%;
+    }
+
+
+    
+    /* Estilos responsive contacto.html */
+
+    .contenedorContacto {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contenedorForm {
+        width: 45%;
+        height: auto;
+        padding: 0;
+    }
+
+    .contactoUbicacion {
+        width: 55%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
