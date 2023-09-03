@@ -194,7 +194,7 @@ strong {
     font-size: 3rem;
 }
 
-.containerHistoria {
+.seccionHistoria {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -207,7 +207,7 @@ strong {
 }
 
 .historia {
-    width: 60%;
+    width: 90%;
     margin-right: 30px;
 }
 
@@ -515,6 +515,10 @@ iframe {
 
     /* Estilos responsive nosotros.html */
 
+    .tituloHistoria {
+        text-align: center;
+    }
+
     .contenidoHistoria {
         flex-direction: column;
         align-items: center;
@@ -584,6 +588,10 @@ iframe {
 
 
     /* Estilos responsive nosotros.html */
+
+    .tituloHistoria {
+        text-align: center;
+    }
 
     .contenidoHistoria {
         flex-direction: column;
