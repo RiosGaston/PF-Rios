@@ -1,0 +1,74 @@
+.tituloBienvenida {
+    text-align: center;
+}
+
+.containerBienvenida {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+
+    .fraseBienvenida {
+        width: 50%;
+        text-align: center;
+        color:$colorSecundario3;
+        text-shadow: 2px 2px 4px rgba(194, 146, 77, 0.5);
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+
+.containerSecciones {
+    margin-bottom: 70px;
+
+    .boxSecciones {
+        width: 100%;
+        margin: 100px 0;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .imgSeccion {
+            width: 45%;
+            object-fit: contain;
+        }
+        
+        .parrafoSeccion {
+            font-size: 1.3rem;
+            margin: 0 25px 0 25px;
+
+            strong {
+                color: $colorSecundario1;
+            }
+        }
+    }
+}
+
+.seccionNavImg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .containerNavImgProductos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 85%;
+
+        .navProductos {
+            margin: 25px 15px;
+
+            .navImg {
+                width: 100%;
+                height: 90%;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

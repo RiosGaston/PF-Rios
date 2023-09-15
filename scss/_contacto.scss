@@ -1,0 +1,75 @@
+.contenedorForm {
+    display: inline-block;
+    width: 40%;
+    height: 580px;
+    margin: 5px 40px;
+
+    label {
+        display: block;
+        margin-top: 10px;
+        padding-bottom: 5px;
+        color: $colorSecundario1;
+        font-weight: bold;
+    }
+
+    .input {
+        display: inline-block;
+        background-color: $colorBgInput;
+        color: $colorSecundario2;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 5px 0;
+        padding: 5px 0;
+        width: 90%;
+        border: none;
+        border-radius: 5px;
+    }
+
+    textarea {
+        width: 90%;
+        background-color: $colorBgInput;
+        color: $colorSecundario2;
+        font-weight: bold;
+    }
+
+    .enviar, .restablecer {
+        display: inline-block;
+        background-color: $colorSecundario1;
+        font-weight: bold;
+        color: $colorSecundario1;
+        cursor: pointer;
+        width: 90%;
+        padding: 5px 0;
+        margin: 5px 0;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+.contactoUbicacion {
+    display: inline-block;
+    width: 50%;
+
+    .contactoCerveceria {
+        display: flex;
+
+        .fa-whatsapp, .fa-envelope {
+            color: #C2924D;
+            margin: 15px 5px 15px 15px;
+        }
+
+        .contacto {
+            display: inline;
+            color: #C2924D;
+            margin: 0 5px;
+        }
+    }
+
+    .tituloUbicacion {
+        margin: 15px 0;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
