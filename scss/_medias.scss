@@ -1,0 +1,234 @@
+@media (max-width: 767px) {
+    body {
+        header {
+            height: auto;
+        }
+    
+        nav {
+            .container-fluid {
+                .btnNav {
+                    border-color: $colorSecundario3;
+                }
+            }
+        }
+        
+        main {
+            margin-bottom: 100px;
+            /* estilos responsive index.html */
+            .containerBienvenida {
+                .fraseBienvenida {
+                    width: 95%;
+                    margin-bottom: 60px;
+                }
+            }
+    
+            .containersecciones {
+                margin: 35px 0;
+                .boxSecciones {
+                    .imgSeccion {
+                        width: 90%;
+                        &:nth-child(2n) {
+                            order: 2;
+                        }
+    
+                        &:nth-child(2n+1) {
+                            order: 3;
+                        }
+                    }
+    
+                    .parrafoSeccion {
+                        margin-top: 25px;
+                        text-align: center;
+                    }
+                }
+            }
+    
+            section {
+                .containerNavImgProductos {
+                    flex-direction: column;
+                    .navProductos {
+                        margin: 0 0 15px 0;
+                        a {
+                            .navImg {
+                                width: 100%;
+                                height: 100%;
+                                margin: 40px 0;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            /* Estilos responsive productos */
+    
+            .contenedorProductos {
+                grid-template-columns: repeat(1 , 1fr);
+                place-items: center;
+                .boxProductos {
+                    width: 80%;
+                }
+            }
+    
+            /* Estilos responsive servicios.html */
+    
+            .containerServicios {
+                .boxCards{
+                    .containerImg {
+                        width: 100%;
+                        padding: 0;
+                    }
+    
+                    .containerDescripcion {
+                        width: 100%;
+                    }
+                }
+            }
+    
+            /* Estilos responsive nosotros.html */
+    
+            .seccionHistoria {
+                .tituloHistoria {
+                    text-align: center;
+                }
+    
+                .contenidoHistoria {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    .containerHistoria {
+                        .historia {
+                            width: 100%;
+                            margin-bottom: 50px;
+                        }
+                    }
+    
+                    video {
+                        width: 90%;
+                    }
+                }
+            }
+    
+            /* Estilos responsive contacto.html */
+    
+            .contenedorContacto {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+    
+                .contenedorForm {
+                    width: 100%;
+                }
+    
+                .contactoUbicacion {
+                    width: 100%;
+                    margin-top: 150px;
+    
+                    .contactoCerveceria {
+                        width: 100%;
+                        flex-direction: column;
+                    }
+    
+                    iframe {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        header {
+            height: auto;
+        }
+
+        main {
+            /* Estilos responsive index.html */
+            .containerBienvenida {
+                .fraseBienvenida {
+                    width: 80%;
+                }
+            }
+
+            .containersecciones {
+                .boxSecciones {
+                    margin: 50px 0;
+                    .parrafoSeccion {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            section {
+                .containerNavImgProductos {
+                    .navProductos {
+                        margin: 0 200px;
+                   }
+                }
+            }
+
+            /* Estilos responsive productos */
+
+            .contenedorProductos {
+                grid-template-columns: repeat(2 , 1fr);
+            }
+
+            /* Estilos responsive nosotros.html */
+
+            .seccionHistoria {
+                .tituloHistoria {
+                    text-align: center;
+                }
+
+                .contenidoHistoria {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+
+                    .containerHistoria{
+                        .historia {
+                            width: 100%;
+                            margin-bottom: 50px;
+                        }
+                    }
+
+                    video {
+                        width: 90%;
+                    }
+                }
+            }
+
+            /* Estilos responsive contacto.html */
+
+            .contenedorContacto {
+                display: flex;
+                flex-direction: row;
+
+                .contenedorForm {
+                    width: 45%;
+                    height: auto;
+                    padding: 0; 
+                }
+                
+                .contactoUbicacion {
+                    width: 55%;
+
+                    .contactoCerveceria {
+                        width: 100%;
+                        flex-direction: column;
+                    }
+
+                    iframe {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    } 
+}

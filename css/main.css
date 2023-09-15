@@ -358,4 +358,164 @@ body .descripcion .precio {
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  body header {
+    height: auto;
+  }
+  body nav .container-fluid .btnNav {
+    border-color: #EEEFE7;
+  }
+  body main {
+    margin-bottom: 100px;
+    /* estilos responsive index.html */
+    /* Estilos responsive productos */
+    /* Estilos responsive servicios.html */
+    /* Estilos responsive nosotros.html */
+    /* Estilos responsive contacto.html */
+  }
+  body main .containerBienvenida .fraseBienvenida {
+    width: 95%;
+    margin-bottom: 60px;
+  }
+  body main .containersecciones {
+    margin: 35px 0;
+  }
+  body main .containersecciones .boxSecciones .imgSeccion {
+    width: 90%;
+  }
+  body main .containersecciones .boxSecciones .imgSeccion:nth-child(2n) {
+    order: 2;
+  }
+  body main .containersecciones .boxSecciones .imgSeccion:nth-child(2n+1) {
+    order: 3;
+  }
+  body main .containersecciones .boxSecciones .parrafoSeccion {
+    margin-top: 25px;
+    text-align: center;
+  }
+  body main section .containerNavImgProductos {
+    flex-direction: column;
+  }
+  body main section .containerNavImgProductos .navProductos {
+    margin: 0 0 15px 0;
+  }
+  body main section .containerNavImgProductos .navProductos a .navImg {
+    width: 100%;
+    height: 100%;
+    margin: 40px 0;
+  }
+  body main .contenedorProductos {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+  body main .contenedorProductos .boxProductos {
+    width: 80%;
+  }
+  body main .containerServicios .boxCards .containerImg {
+    width: 100%;
+    padding: 0;
+  }
+  body main .containerServicios .boxCards .containerDescripcion {
+    width: 100%;
+  }
+  body main .seccionHistoria .tituloHistoria {
+    text-align: center;
+  }
+  body main .seccionHistoria .contenidoHistoria {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  body main .seccionHistoria .contenidoHistoria .containerHistoria .historia {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  body main .seccionHistoria .contenidoHistoria video {
+    width: 90%;
+  }
+  body main .contenedorContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  body main .contenedorContacto .contenedorForm {
+    width: 100%;
+  }
+  body main .contenedorContacto .contactoUbicacion {
+    width: 100%;
+    margin-top: 150px;
+  }
+  body main .contenedorContacto .contactoUbicacion .contactoCerveceria {
+    width: 100%;
+    flex-direction: column;
+  }
+  body main .contenedorContacto .contactoUbicacion iframe {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body header {
+    height: auto;
+  }
+  body main {
+    /* Estilos responsive index.html */
+    /* Estilos responsive productos */
+    /* Estilos responsive nosotros.html */
+    /* Estilos responsive contacto.html */
+  }
+  body main .containerBienvenida .fraseBienvenida {
+    width: 80%;
+  }
+  body main .containersecciones .boxSecciones {
+    margin: 50px 0;
+  }
+  body main .containersecciones .boxSecciones .parrafoSeccion {
+    margin-right: 0;
+  }
+  body main section .containerNavImgProductos .navProductos {
+    margin: 0 200px;
+  }
+  body main .contenedorProductos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body main .seccionHistoria .tituloHistoria {
+    text-align: center;
+  }
+  body main .seccionHistoria .contenidoHistoria {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  body main .seccionHistoria .contenidoHistoria .containerHistoria .historia {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  body main .seccionHistoria .contenidoHistoria video {
+    width: 90%;
+  }
+  body main .contenedorContacto {
+    display: flex;
+    flex-direction: row;
+  }
+  body main .contenedorContacto .contenedorForm {
+    width: 45%;
+    height: auto;
+    padding: 0;
+  }
+  body main .contenedorContacto .contactoUbicacion {
+    width: 55%;
+  }
+  body main .contenedorContacto .contactoUbicacion .contactoCerveceria {
+    width: 100%;
+    flex-direction: column;
+  }
+  body main .contenedorContacto .contactoUbicacion iframe {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
