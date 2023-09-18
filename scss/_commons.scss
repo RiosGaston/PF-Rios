@@ -1,3 +1,11 @@
+@mixin estilosListas {
+    margin: 0 0 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,9 +27,6 @@ body {
             width: 115px;
         }
 
-
-        //--------------------------------------verificar-----------------------------------
-
         .navegacion {
             .container-fluid {
                 .btnNav {
@@ -36,12 +41,9 @@ body {
                             list-style: none;
                             display: inline-block;
                             a {
+                                @include estilosListas;
                                 color: $colorSecundario3;
-                                text-decoration: none;
-                                font-size: 25px;
-                                font-weight: bold;
-                                text-transform: uppercase;
-                                margin: 0 0 0 20px;
+                                transition: color 0.5s;
                                 &:hover {
                                     color: $colorSecundario2;
                                 }      
@@ -86,12 +88,9 @@ body {
         margin-top: 50px;
 
         .linkFooter {
+            @include estilosListas;
             color: $colorSecundario1;
-            text-decoration: none;
-            font-size: 25px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin: 0 0 0 20px;
+            transition: color 0.5s;
             &:hover {
                 color: $colorSecundario2;
             }

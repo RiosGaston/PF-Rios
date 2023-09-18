@@ -1,3 +1,13 @@
+@keyframes subtitulo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .tituloBienvenida {
     text-align: center;
 }
@@ -15,9 +25,11 @@
         text-align: center;
         color:$colorSecundario3;
         text-shadow: 2px 2px 4px rgba(194, 146, 77, 0.5);
-        font-size: 1.2rem;
+        font-size: $subtitulo;
         font-weight: bold;
-        font-style: italic;
+        font-style: italic;        
+        animation-name: subtitulo;
+        animation-duration: 1s;
     }
 }
 
@@ -38,7 +50,7 @@
         }
         
         .parrafoSeccion {
-            font-size: 1.3rem;
+            font-size: $parrafo;
             margin: 0 25px 0 25px;
 
             strong {
@@ -67,6 +79,7 @@
                 height: 90%;
                 &:hover {
                     transform: scale(1.1);
+                    transition: transform 1s;
                 }
             }
         }

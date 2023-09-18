@@ -30,12 +30,13 @@ body header .navegacion .container-fluid .navbar-collapse .navbar-nav .navTextCo
   display: inline-block;
 }
 body header .navegacion .container-fluid .navbar-collapse .navbar-nav .navTextColor a {
-  color: #EEEFE7;
+  margin: 0 0 0 20px;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 25px;
   font-weight: bold;
-  text-transform: uppercase;
-  margin: 0 0 0 20px;
+  color: #EEEFE7;
+  transition: color 0.5s;
 }
 body header .navegacion .container-fluid .navbar-collapse .navbar-nav .navTextColor a:hover {
   color: #97501A;
@@ -69,12 +70,13 @@ body footer {
   margin-top: 50px;
 }
 body footer .linkFooter {
-  color: #C2924D;
+  margin: 0 0 0 20px;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 25px;
   font-weight: bold;
-  text-transform: uppercase;
-  margin: 0 0 0 20px;
+  color: #C2924D;
+  transition: color 0.5s;
 }
 body footer .linkFooter:hover {
   color: #97501A;
@@ -92,6 +94,14 @@ body .descripcion .precio {
   margin: 10px 0;
 }
 
+@keyframes subtitulo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .tituloBienvenida {
   text-align: center;
 }
@@ -109,9 +119,11 @@ body .descripcion .precio {
   text-align: center;
   color: #EEEFE7;
   text-shadow: 2px 2px 4px rgba(194, 146, 77, 0.5);
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
   font-style: italic;
+  animation-name: subtitulo;
+  animation-duration: 1s;
 }
 
 .containerSecciones {
@@ -130,7 +142,7 @@ body .descripcion .precio {
   object-fit: contain;
 }
 .containerSecciones .boxSecciones .parrafoSeccion {
-  font-size: 1.3rem;
+  font-size: 1.23rem;
   margin: 0 25px 0 25px;
 }
 .containerSecciones .boxSecciones .parrafoSeccion strong {
@@ -157,6 +169,7 @@ body .descripcion .precio {
 }
 .seccionNavImg .containerNavImgProductos .navProductos .navImg:hover {
   transform: scale(1.1);
+  transition: transform 1s;
 }
 
 .contenedorProductos {
@@ -182,6 +195,7 @@ body .descripcion .precio {
 }
 .contenedorProductos .boxProductos .descripcion {
   text-align: center;
+  font-size: 1.23rem;
 }
 .contenedorProductos .boxProductos .descripcion .botonComprar {
   align-self: flex-end;
@@ -197,10 +211,13 @@ body .descripcion .precio {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.5s;
 }
 .contenedorProductos .boxProductos .descripcion .botonComprar:hover {
   background-color: #C2924D;
   color: #EEEFE7;
+  transform: scale(1.2);
+  transition: transform 0.5s;
 }
 
 .tituloServicios {
@@ -238,7 +255,11 @@ body .descripcion .precio {
 }
 .containerServicios .boxCards .containerDescripcion .tituloCardServicios {
   text-align: center;
+  font-size: 1.8rem;
   color: #97501A;
+}
+.containerServicios .boxCards .containerDescripcion .parrafoServicios {
+  font-size: 1.23rem;
 }
 .containerServicios .boxCards .containerDescripcion .subTituloServicios {
   font-size: 1.5rem;
@@ -259,15 +280,19 @@ body .descripcion .precio {
 .containerServicios .boxCards .containerDescripcion .containerBtnServicios .btnServicios {
   background-color: #EEEFE7;
   width: 7rem;
+  padding: 5px 10px;
   text-transform: uppercase;
   color: #C2924D;
   font-weight: bold;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
+  transition: background-color 0.5s;
 }
 .containerServicios .boxCards .containerDescripcion .containerBtnServicios .btnServicios:hover {
   background-color: #C2924D;
   color: #EEEFE7;
+  transform: scale(1.2);
+  transition: transform 0.5s;
 }
 
 .seccionHistoria {
@@ -284,8 +309,12 @@ body .descripcion .precio {
   margin: 0 25px;
 }
 .seccionHistoria .contenidoHistoria .historia {
+  font-size: 1.23rem;
   width: 90%;
   margin-right: 30px;
+}
+.seccionHistoria .contenidoHistoria h2 {
+  font-size: 2rem;
 }
 .seccionHistoria .contenidoHistoria video {
   width: 40%;
@@ -306,15 +335,15 @@ body .descripcion .precio {
 }
 .contenedorForm .input {
   display: inline-block;
-  background-color: #948E7A;
-  color: #97501A;
-  font-size: 14px;
   font-weight: bold;
-  margin: 5px 0;
   padding: 5px 0;
+  margin: 5px 0;
   width: 90%;
   border: none;
   border-radius: 5px;
+  background-color: #948E7A;
+  color: #97501A;
+  font-size: 14px;
 }
 .contenedorForm textarea {
   width: 90%;
@@ -324,15 +353,19 @@ body .descripcion .precio {
 }
 .contenedorForm .enviar, .contenedorForm .restablecer {
   display: inline-block;
-  background-color: #C2924D;
   font-weight: bold;
-  color: #C2924D;
-  cursor: pointer;
-  width: 90%;
   padding: 5px 0;
   margin: 5px 0;
+  width: 90%;
   border: none;
   border-radius: 5px;
+  background-color: #C2924D;
+  color: #EEEFE7;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.contenedorForm .enviar:hover, .contenedorForm .restablecer:hover {
+  background-color: #97501A;
 }
 
 .contactoUbicacion {
@@ -362,7 +395,7 @@ body .descripcion .precio {
   body header {
     height: auto;
   }
-  body nav .container-fluid .btnNav {
+  body header nav .container-fluid .btnNav {
     border-color: #EEEFE7;
   }
   body main {
@@ -377,31 +410,34 @@ body .descripcion .precio {
     width: 95%;
     margin-bottom: 60px;
   }
-  body main .containersecciones {
+  body main .containerSecciones {
     margin: 35px 0;
   }
-  body main .containersecciones .boxSecciones .imgSeccion {
+  body main .containerSecciones .boxSecciones {
+    margin: 5px 0;
+  }
+  body main .containerSecciones .boxSecciones .imgSeccion {
+    margin: 20px 0;
     width: 90%;
   }
-  body main .containersecciones .boxSecciones .imgSeccion:nth-child(2n) {
+  body main .containerSecciones .boxSecciones .imgSeccion:nth-child(2n) {
     order: 2;
   }
-  body main .containersecciones .boxSecciones .imgSeccion:nth-child(2n+1) {
+  body main .containerSecciones .boxSecciones .imgSeccion:nth-child(2n+1) {
     order: 3;
   }
-  body main .containersecciones .boxSecciones .parrafoSeccion {
+  body main .containerSecciones .boxSecciones .parrafoSeccion {
     margin-top: 25px;
     text-align: center;
   }
-  body main section .containerNavImgProductos {
+  body main .seccionNavImg .containerNavImgProductos {
     flex-direction: column;
   }
-  body main section .containerNavImgProductos .navProductos {
+  body main .seccionNavImg .containerNavImgProductos .navProductos {
     margin: 0 0 15px 0;
   }
-  body main section .containerNavImgProductos .navProductos a .navImg {
+  body main .seccionNavImg .containerNavImgProductos .navProductos a .navImg {
     width: 100%;
-    height: 100%;
     margin: 40px 0;
   }
   body main .contenedorProductos {
@@ -455,6 +491,12 @@ body .descripcion .precio {
   body main .contenedorContacto .contactoUbicacion iframe {
     width: 90%;
   }
+  body footer {
+    display: grid;
+  }
+  body footer a {
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body header {
@@ -469,13 +511,13 @@ body .descripcion .precio {
   body main .containerBienvenida .fraseBienvenida {
     width: 80%;
   }
-  body main .containersecciones .boxSecciones {
+  body main .containerSecciones .boxSecciones {
     margin: 50px 0;
   }
-  body main .containersecciones .boxSecciones .parrafoSeccion {
+  body main .containerSecciones .boxSecciones .parrafoSeccion {
     margin-right: 0;
   }
-  body main section .containerNavImgProductos .navProductos {
+  body main .containerNavImgProductos .navProductos {
     margin: 0 200px;
   }
   body main .contenedorProductos {
