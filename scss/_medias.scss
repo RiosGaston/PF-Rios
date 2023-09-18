@@ -12,6 +12,9 @@
         }
         
         main {
+            h1 {
+                text-align: center;
+            }
             margin-bottom: 100px;
             /* estilos responsive index.html */
             .containerBienvenida {
@@ -74,7 +77,7 @@
             }
     
             /* Estilos responsive servicios.html */
-    
+
             .containerServicios {
                 .boxCards{
                     .containerImg {
@@ -159,6 +162,9 @@
         }
 
         main {
+            h1 {
+                text-align: center;
+            }
             /* Estilos responsive index.html */
             .containerBienvenida {
                 .fraseBienvenida {
@@ -218,6 +224,7 @@
             .contenedorContacto {
                 display: flex;
                 flex-direction: row;
+                margin-top: 20px;
 
                 .contenedorForm {
                     width: 45%;
@@ -227,6 +234,7 @@
                 
                 .contactoUbicacion {
                     width: 55%;
+                    margin-top: 20px;
 
                     .contactoCerveceria {
                         width: 100%;

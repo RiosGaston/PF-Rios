@@ -406,6 +406,9 @@ body .descripcion .precio {
     /* Estilos responsive nosotros.html */
     /* Estilos responsive contacto.html */
   }
+  body main h1 {
+    text-align: center;
+  }
   body main .containerBienvenida .fraseBienvenida {
     width: 95%;
     margin-bottom: 60px;
@@ -508,6 +511,9 @@ body .descripcion .precio {
     /* Estilos responsive nosotros.html */
     /* Estilos responsive contacto.html */
   }
+  body main h1 {
+    text-align: center;
+  }
   body main .containerBienvenida .fraseBienvenida {
     width: 80%;
   }
@@ -542,6 +548,7 @@ body .descripcion .precio {
   body main .contenedorContacto {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
   }
   body main .contenedorContacto .contenedorForm {
     width: 45%;
@@ -550,6 +557,7 @@ body .descripcion .precio {
   }
   body main .contenedorContacto .contactoUbicacion {
     width: 55%;
+    margin-top: 20px;
   }
   body main .contenedorContacto .contactoUbicacion .contactoCerveceria {
     width: 100%;
