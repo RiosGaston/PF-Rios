@@ -182,29 +182,44 @@ body .descripcion .precio {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #252525;
   border-radius: 10px;
   padding: 15px;
   margin: 15px 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  min-height: 350px;
 }
 .contenedorProductos .boxProductos .imgProductos {
   width: 100%;
   height: 200px;
 }
-.contenedorProductos .boxProductos .descripcion {
+.contenedorProductos .boxProductos .containerDescripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
   font-size: 1.23rem;
+  height: 100%;
 }
-.contenedorProductos .boxProductos .descripcion .botonComprar {
-  align-self: flex-end;
-  margin: 10px;
+.contenedorProductos .boxProductos .containerDescripcion .descripcion {
+  width: 100%;
+  overflow-y: auto;
+  margin: 10px 0 20px 0;
+}
+.contenedorProductos .boxProductos .containerDescripcion .precio {
+  color: #C2924D;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+.contenedorProductos .boxProductos .botonComprar {
+  margin-top: auto;
   border: none;
-  border: 15px;
   border-radius: 15px;
+  padding: 10px 20px;
   margin-bottom: 15px;
-  padding: 5px 10px;
   background-color: #EEEFE7;
   color: #C2924D;
   text-transform: uppercase;
@@ -213,7 +228,7 @@ body .descripcion .precio {
   cursor: pointer;
   transition: background-color 0.5s;
 }
-.contenedorProductos .boxProductos .descripcion .botonComprar:hover {
+.contenedorProductos .boxProductos .botonComprar:hover {
   background-color: #C2924D;
   color: #EEEFE7;
   transform: scale(1.2);
