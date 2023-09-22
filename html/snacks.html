@@ -1,67 +1,84 @@
-containerDescripcion<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre nuestra variedad de snacks: papas fritas, maní tostado, maní crocante y más. Encuentra tus sabores favoritos y disfruta de deliciosos aperitivos">
-    <meta name="keywords" content="snacks, papas fritas, maní tostado, maní crocante, Krachitos, Pehuamar, Pringles, Mani King">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta name="author" content="Erik Gaston Rios">
+    <meta name="description"
+        content="Descubre nuestra variedad de snacks: papas fritas, maní tostado, maní crocante y más. Encuentra tus sabores favoritos y disfruta de deliciosos aperitivos">
+    <meta name="keywords"
+        content="snacks, papas fritas, maní tostado, maní crocante, Krachitos, Pehuamar, Pringles, Mani King">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css">
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
     <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon">
-    <title>Snacks</title>
+    <title>Snacks - Disfruta del mejor sabor de los snacks</title>
 </head>
+
 <body>
     <header>
         <!-- BS -->
         <nav class="navbar navbar-expand-lg navegacion">
             <div class="container-fluid">
                 <a href="../index.html">
-                    <img src="../img/logo.webp" class="logo" alt="Logo de la pagina que contiene una ilustracion de cervezas y mani">  
+                    <img src="../img/logo.webp" class="logo"
+                        alt="Logo de la pagina que contiene una ilustracion de cervezas y mani">
                 </a>
-                <button class="navbar-toggler btnNav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler btnNav" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item navTextColor">
-                        <a aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="dropdown navTextColor">
-                        <a class="dropdown-toggle navTextColor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
-                        </a>
-                        <ul class="dropdown-menu subLista">
-                            <li><a href="cervezas.html">Cervezas</a></li>
-                            <li><a href="snacks.html">Snacks</a></li>
-                            <li><a href="promociones.html">Promociones</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item navTextColor">
-                        <a href="servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item navTextColor">
-                        <a href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item navTextColor">
-                        <a href="contacto.html">Contacto</a>
-                    </li>
+                        <li class="nav-item navTextColor">
+                            <a aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="dropdown navTextColor">
+                            <a class="dropdown-toggle navTextColor" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu subLista">
+                                <li><a href="cervezas.html">Cervezas</a></li>
+                                <li><a href="snacks.html">Snacks</a></li>
+                                <li><a href="promociones.html">Promociones</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item navTextColor">
+                            <a href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item navTextColor">
+                            <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item navTextColor">
+                            <a href="contacto.html">Contacto</a>
+                        </li>
                     </ul>
-              </div>
+                </div>
             </div>
-          </nav>
+        </nav>
         <!-- BS -->
     </header>
 
     <main>
         <h1>Snacks</h1>
 
-        <div class="contenedorProductos">
+        <section class="containerProductos">
             <article class="boxProductos">
                 <div class="boxImgProducto">
-                    <img class="imgProductos" src="../img/snack-art-1.webp" alt="Imagen de papas fritas corte tradicional marca Krachitos de 55g">
+                    <img class="imgProductos" src="../img/snack-art-1.webp"
+                        alt="Imagen de papas fritas corte tradicional marca Krachitos de 55g">
                 </div>
                 <div class="containerDescripcion">
                     <p>Papas Fritas Krachitos Corte Tradicional 55g</p>
@@ -72,7 +89,8 @@ containerDescripcion<!DOCTYPE html>
 
             <article class="boxProductos">
                 <div class="boxImgProducto">
-                    <img class="imgProductos" src="../img/snack-art-2.webp" alt="Imagen de papas fritas corte tradicional marca Krachitos de 480g">
+                    <img class="imgProductos" src="../img/snack-art-2.webp"
+                        alt="Imagen de papas fritas corte tradicional marca Krachitos de 480g">
                 </div>
                 <div class="containerDescripcion">
                     <p>Papas Fritas Krachitos Corte Tradicional 480g</p>
@@ -83,7 +101,8 @@ containerDescripcion<!DOCTYPE html>
 
             <article class="boxProductos">
                 <div class="boxImgProducto">
-                    <img class="imgProductos" src="../img/snack-art-3.webp" alt="Imagen de papas fritas clasicas marca Pehuamar de 520g">
+                    <img class="imgProductos" src="../img/snack-art-3.webp"
+                        alt="Imagen de papas fritas clasicas marca Pehuamar de 520g">
                 </div>
                 <div class="containerDescripcion">
                     <p>Papas Fritas Pehuamar clasicas 520g</p>
@@ -94,7 +113,8 @@ containerDescripcion<!DOCTYPE html>
 
             <article class="boxProductos">
                 <div class="boxImgProducto">
-                    <img class="imgProductos" src="../img/snack-art-4.webp" alt="Imagen de papas fritas marca Pringles de 124g">
+                    <img class="imgProductos" src="../img/snack-art-4.webp"
+                        alt="Imagen de papas fritas marca Pringles de 124g">
                 </div>
                 <div class="containerDescripcion">
                     <p>Papas Fritas Pringles 124g</p>
@@ -105,7 +125,8 @@ containerDescripcion<!DOCTYPE html>
 
             <article class="boxProductos">
                 <div class="boxImgProducto">
-                    <img class="imgProductos" src="../img/snack-art-5.webp" alt="Imagen de mani tostado con cascara marca Mani King de 175g">
+                    <img class="imgProductos" src="../img/snack-art-5.webp"
+                        alt="Imagen de mani tostado con cascara marca Mani King de 175g">
                 </div>
                 <div class="containerDescripcion">
                     <p>Mani Tostado Con Cascara Mani King 175g</p>
@@ -116,7 +137,8 @@ containerDescripcion<!DOCTYPE html>
 
             <article class="boxProductos">
                 <div class="boxImgProducto">
-                    <img class="imgProductos" src="../img/snack-art-6.webp" alt="Imagen de mani japones crocante sabor queso marca Mani King de 80g">
+                    <img class="imgProductos" src="../img/snack-art-6.webp"
+                        alt="Imagen de mani japones crocante sabor queso marca Mani King de 80g">
                 </div>
                 <div class="containerDescripcion">
                     <p>Mani Crocante Japones Sabor Queso Mani King 80g</p>
@@ -127,7 +149,8 @@ containerDescripcion<!DOCTYPE html>
 
             <article class="boxProductos">
                 <div class="boxImgProducto">
-                    <img class="imgProductos" src="../img/snack-art-7.webp" alt="Imagen de mani japones crocante sabor jamon marca Mani King de 80g">
+                    <img class="imgProductos" src="../img/snack-art-7.webp"
+                        alt="Imagen de mani japones crocante sabor jamon marca Mani King de 80g">
                 </div>
                 <div class="containerDescripcion">
                     <p>Mani Crocante Japones Sabor Jamon Mani King 80g</p>
@@ -138,7 +161,8 @@ containerDescripcion<!DOCTYPE html>
 
             <article class="boxProductos">
                 <div class="boxImgProducto">
-                    <img class="imgProductos" src="../img/snack-art-8.webp" alt="Imagen de mani salado con piel marca Mani King de 120g">
+                    <img class="imgProductos" src="../img/snack-art-8.webp"
+                        alt="Imagen de mani salado con piel marca Mani King de 120g">
                 </div>
                 <div class="containerDescripcion">
                     <p>Mani Salado Con Piel Mani King 120g</p>
@@ -149,7 +173,8 @@ containerDescripcion<!DOCTYPE html>
 
             <article class="boxProductos">
                 <div class="boxImgProducto">
-                    <img class="imgProductos" src="../img/snack-art-9.webp" alt="Imagen de mani salado sin piel marca Mani King de 500g">
+                    <img class="imgProductos" src="../img/snack-art-9.webp"
+                        alt="Imagen de mani salado sin piel marca Mani King de 500g">
                 </div>
                 <div class="containerDescripcion">
                     <p>Mani Salado Sin Piel Mani King 500g</p>
@@ -157,18 +182,26 @@ containerDescripcion<!DOCTYPE html>
                 </div>
                 <button class="botonComprar">Comprar</button>
             </article>
-        </div>
+        </section>
     </main>
 
     <footer>
-        <a class="linkFooter" href="https://www.instagram.com/" target="_blank">Instagram</a>
-        <a class="linkFooter" href="https://twitter.com/" target="_blank">Twitter</a>
-        <a class="linkFooter" href="https://www.tiktok.com/es/" target="_blank">Tiktok</a>
-        <a class="linkFooter" href="https://es-la.facebook.com/" target="_blank">Facebook</a>
-        
-        <p class="copyright">Copyright © 2023 ECB S.A</p>  
+        <div class="redesSociales">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram linkFooter"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter linkFooter"></i></a>
+            <a href="https://www.tiktok.com/es/" target="_blank"><i class="fa-brands fa-tiktok linkFooter"></i></a>
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook linkFooter"></i></a>
+        </div>
+
+        <div class="legalesCopy">
+            <p class="copyright">Copyright © 2023 ECB S.A - Todos los derechos reservados</p>
+        </div>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5caac7fd81.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

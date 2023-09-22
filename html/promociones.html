@@ -1,69 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre nuestras increíbles promociones con cervezas y snacks. Obtén un 30% de descuento en packs exclusivos. ¡Compra ahora y disfruta al máximo">
-    <meta name="keywords" content="promociones, cervezas, snacks, descuento, packs exclusivos, Stella Artois, Miller, Amstel, Heineken, Schneider, Pringles, papas fritas, Mani Tostado, Mani Crocante, oferta, comprar">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta name="author" content="Erik Gaston Rios">
+    <meta name="description"
+        content="Descubre nuestras increíbles promociones con cervezas y snacks. Obtén un 30% de descuento en packs exclusivos. ¡Compra ahora y disfruta al máximo">
+    <meta name="keywords"
+        content="promociones, cervezas, snacks, descuento, packs exclusivos, Stella Artois, Miller, Amstel, Heineken, Schneider, Pringles, papas fritas, Mani Tostado, Mani Crocante, oferta, comprar">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css">
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
     <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon">
     <title>Promociones - 30% de descuento en cervezas y snacks</title>
 </head>
+
 <body>
     <header>
         <!-- BS -->
         <nav class="navbar navbar-expand-lg navegacion">
             <div class="container-fluid">
                 <a href="../index.html">
-                    <img src="../img/logo.webp" class="logo" alt="Logo de la pagina que contiene una ilustracion de cervezas y mani">  
-                </a> 
-                <button class="navbar-toggler btnNav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <img src="../img/logo.webp" class="logo"
+                        alt="Logo de la pagina que contiene una ilustracion de cervezas y mani">
+                </a>
+                <button class="navbar-toggler btnNav" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item navTextColor">
-                        <a aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="dropdown navTextColor">
-                        <a class="dropdown-toggle navTextColor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
-                        </a>
-                        <ul class="dropdown-menu subLista">
-                            <li><a href="cervezas.html">Cervezas</a></li>
-                            <li><a href="snacks.html">Snacks</a></li>
-                            <li><a href="promociones.html">Promociones</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item navTextColor">
-                        <a href="servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item navTextColor">
-                        <a href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item navTextColor">
-                        <a href="contacto.html">Contacto</a>
-                    </li>
+                        <li class="nav-item navTextColor">
+                            <a aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="dropdown navTextColor">
+                            <a class="dropdown-toggle navTextColor" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu subLista">
+                                <li><a href="cervezas.html">Cervezas</a></li>
+                                <li><a href="snacks.html">Snacks</a></li>
+                                <li><a href="promociones.html">Promociones</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item navTextColor">
+                            <a href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item navTextColor">
+                            <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item navTextColor">
+                            <a href="contacto.html">Contacto</a>
+                        </li>
                     </ul>
-              </div>
+                </div>
             </div>
-          </nav>
+        </nav>
         <!-- BS -->
     </header>
 
     <main>
         <h1>Promociones</h1>
-        <div class="contenedorProductos">
+        <section class="containerProductos">
             <article class="boxProductos">
                 <div class="boxImgProducto">
                     <img class="imgProductos" src="../img/promo-1.webp" alt="Imagen de promoción de cerveza mas mani">
                 </div>
                 <div class="containerDescripcion">
-                    <p class="descripcion">3 cervezas Stella Artois 473ml + Mani Tostado Con Cascara 175g + 2 Mani Crocante 80g</p>
+                    <p class="descripcion">3 cervezas Stella Artois 473ml + Mani Tostado Con Cascara 175g + 2 Mani
+                        Crocante 80g</p>
                     <p class="precio">$ 1900</p>
                 </div>
                 <button class="botonComprar">Comprar</button>
@@ -71,7 +88,8 @@
 
             <article class="boxProductos">
                 <div class="boxImgProducto">
-                    <img class="imgProductos" src="../img/promo-2.webp" alt="Imagen de promoción de cerveza mas papas fritas">
+                    <img class="imgProductos" src="../img/promo-2.webp"
+                        alt="Imagen de promoción de cerveza mas papas fritas">
                 </div>
                 <div class="containerDescripcion">
                     <p class="descripcion">2 cervezas Miller 473ml + 2 Amstel 473ml + 2 papas fritas 480g</p>
@@ -81,21 +99,25 @@
 
             <article class="boxProductos">
                 <div class="boxImgProducto">
-                    <img class="imgProductos" src="../img/promo-3.webp" alt="Imagen de promoción de cerveza mas papas fritas y mani">
+                    <img class="imgProductos" src="../img/promo-3.webp"
+                        alt="Imagen de promoción de cerveza mas papas fritas y mani">
                 </div>
                 <div class="containerDescripcion">
-                    <p class="descripcion">2 cervezas Heineken 710ml + 2 Schneider 710ml + Pringles 124g + Papas Fritas 520g + Mani Con Piel 120g</p>
-                    <p class="precio">$ 3200</p>       
+                    <p class="descripcion">2 cervezas Heineken 710ml + 2 Schneider 710ml + Pringles 124g + Papas Fritas
+                        520g + Mani Con Piel 120g</p>
+                    <p class="precio">$ 3200</p>
                 </div>
                 <button class="botonComprar">Comprar</button>
             </article>
 
             <article class="boxProductos">
                 <div class="boxImgProducto">
-                    <img class="imgProductos" src="../img/promo-4.webp" alt="Imagen de promoción de pack de cerveza mas mani">
+                    <img class="imgProductos" src="../img/promo-4.webp"
+                        alt="Imagen de promoción de pack de cerveza mas mani">
                 </div>
                 <div class="containerDescripcion">
-                    <p class="descripcion">Pack cerveza Heineken 473ml + Mani Tostado Con Cascara 175g + Mani Salado Sin Piel 500g</p>
+                    <p class="descripcion">Pack cerveza Heineken 473ml + Mani Tostado Con Cascara 175g + Mani Salado Sin
+                        Piel 500g</p>
                     <p class="precio">$ 3750</p>
                 </div>
                 <button class="botonComprar">Comprar</button>
@@ -103,7 +125,8 @@
 
             <article class="boxProductos">
                 <div class="boxImgProducto">
-                    <img class="imgProductos" src="../img/promo-5.webp" alt="Imagen de promoción de pack de cerveza mas papas fritas">
+                    <img class="imgProductos" src="../img/promo-5.webp"
+                        alt="Imagen de promoción de pack de cerveza mas papas fritas">
                 </div>
                 <div class="containerDescripcion">
                     <p class="descripcion">Pack cerveza Amstel 473ml + 2 papas fritas Krachitos 480g</p>
@@ -114,10 +137,12 @@
 
             <article class="boxProductos">
                 <div class="boxImgProducto">
-                    <img class="imgProductos" src="../img/promo-6.webp" alt="Imagen de promoción de pack de cerveza mas papas fritas y mani">
+                    <img class="imgProductos" src="../img/promo-6.webp"
+                        alt="Imagen de promoción de pack de cerveza mas papas fritas y mani">
                 </div>
                 <div class="containerDescripcion">
-                    <p class="descripcion">Pack Cerveza Stella Artois 473ml + Pringles 124g + 2 Mani Crocante Japones Sabor a elección 80g</p>
+                    <p class="descripcion">Pack Cerveza Stella Artois 473ml + Pringles 124g + 2 Mani Crocante Japones
+                        Sabor a elección 80g</p>
                     <p class="precio">$ 3400</p>
                 </div>
                 <button class="botonComprar">Comprar</button>
@@ -125,7 +150,8 @@
 
             <article class="boxProductos">
                 <div class="boxImgProducto">
-                    <img class="imgProductos" src="../img/promo-7.webp" alt="Imagen de promoción de pack de cerveza mas papas fritas y mani">
+                    <img class="imgProductos" src="../img/promo-7.webp"
+                        alt="Imagen de promoción de pack de cerveza mas papas fritas y mani">
                 </div>
                 <div class="containerDescripcion">
                     <p class="descripcion">Pack Cerveza Miller 473ml + Papas Fritas 520g + Mani Con Piel 120g</p>
@@ -155,18 +181,26 @@
                 </div>
                 <button class="botonComprar">Comprar</button>
             </article>
-        </div>
+        </section>
     </main>
 
     <footer>
-        <a class="linkFooter" href="https://www.instagram.com/" target="_blank">Instagram</a>
-        <a class="linkFooter" href="https://twitter.com/" target="_blank">Twitter</a>
-        <a class="linkFooter" href="https://www.tiktok.com/es/" target="_blank">Tiktok</a>
-        <a class="linkFooter" href="https://es-la.facebook.com/" target="_blank">Facebook</a>
-        
-        <p class="copyright">Copyright © 2023 ECB S.A</p>
+        <div class="redesSociales">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram linkFooter"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter linkFooter"></i></a>
+            <a href="https://www.tiktok.com/es/" target="_blank"><i class="fa-brands fa-tiktok linkFooter"></i></a>
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook linkFooter"></i></a>
+        </div>
+
+        <div class="legalesCopy">
+            <p class="copyright">Copyright © 2023 ECB S.A - Todos los derechos reservados</p>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5caac7fd81.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -64,8 +64,11 @@ body main p {
   color: #EEEFE7;
 }
 body footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #EEEFE7;
-  padding: 20px 15px;
+  padding: 20px 12%;
   text-align: center;
   margin-top: 50px;
 }
@@ -75,6 +78,8 @@ body footer .linkFooter {
   text-transform: uppercase;
   font-size: 25px;
   font-weight: bold;
+  font-size: 35px;
+  margin: 0 20px;
   color: #C2924D;
   transition: color 0.5s;
 }
@@ -84,6 +89,7 @@ body footer .linkFooter:hover {
 body footer .copyright {
   margin-top: 20px;
   color: #C2924D;
+  font-weight: 500;
 }
 body .descripcion {
   font-size: 20px;
@@ -172,13 +178,13 @@ body .descripcion .precio {
   transition: transform 1s;
 }
 
-.contenedorProductos {
+.containerProductos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 2rem 0;
   gap: 15px;
 }
-.contenedorProductos .boxProductos {
+.containerProductos .boxProductos {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,11 +196,11 @@ body .descripcion .precio {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   min-height: 350px;
 }
-.contenedorProductos .boxProductos .imgProductos {
+.containerProductos .boxProductos .imgProductos {
   width: 100%;
   height: 200px;
 }
-.contenedorProductos .boxProductos .containerDescripcion {
+.containerProductos .boxProductos .containerDescripcion {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,18 +209,18 @@ body .descripcion .precio {
   font-size: 1.23rem;
   height: 100%;
 }
-.contenedorProductos .boxProductos .containerDescripcion .descripcion {
+.containerProductos .boxProductos .containerDescripcion .descripcion {
   width: 100%;
   overflow-y: auto;
   margin: 10px 0 20px 0;
 }
-.contenedorProductos .boxProductos .containerDescripcion .precio {
+.containerProductos .boxProductos .containerDescripcion .precio {
   color: #C2924D;
   font-weight: bold;
   margin-top: auto;
   margin-bottom: 20px;
 }
-.contenedorProductos .boxProductos .botonComprar {
+.containerProductos .boxProductos .botonComprar {
   margin-top: auto;
   border: none;
   border-radius: 15px;
@@ -228,7 +234,7 @@ body .descripcion .precio {
   cursor: pointer;
   transition: background-color 0.5s;
 }
-.contenedorProductos .boxProductos .botonComprar:hover {
+.containerProductos .boxProductos .botonComprar:hover {
   background-color: #C2924D;
   color: #EEEFE7;
   transform: scale(1.2);
@@ -348,7 +354,7 @@ body .descripcion .precio {
   color: #C2924D;
   font-weight: bold;
 }
-.contenedorForm .input {
+.contenedorForm .input, .contenedorForm textarea {
   display: inline-block;
   font-weight: bold;
   padding: 5px 0;
@@ -362,8 +368,6 @@ body .descripcion .precio {
 }
 .contenedorForm textarea {
   width: 90%;
-  background-color: #948E7A;
-  color: #97501A;
   font-weight: bold;
 }
 .contenedorForm .enviar, .contenedorForm .restablecer {
@@ -458,11 +462,11 @@ body .descripcion .precio {
     width: 100%;
     margin: 40px 0;
   }
-  body main .contenedorProductos {
+  body main .containerProductos {
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
   }
-  body main .contenedorProductos .boxProductos {
+  body main .containerProductos .boxProductos {
     width: 80%;
   }
   body main .containerServicios .boxCards .containerImg {
@@ -510,10 +514,12 @@ body .descripcion .precio {
     width: 90%;
   }
   body footer {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
   }
-  body footer a {
-    margin-bottom: 20px;
+  body footer .redesSociales {
+    display: flex;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -523,6 +529,7 @@ body .descripcion .precio {
   body main {
     /* Estilos responsive index.html */
     /* Estilos responsive productos */
+    /* Estilos responsive servicios.html */
     /* Estilos responsive nosotros.html */
     /* Estilos responsive contacto.html */
   }
@@ -541,8 +548,15 @@ body .descripcion .precio {
   body main .containerNavImgProductos .navProductos {
     margin: 0 200px;
   }
-  body main .contenedorProductos {
+  body main .containerProductos {
     grid-template-columns: repeat(2, 1fr);
+  }
+  body main .containerServicios .boxCards .containerImg {
+    width: 100%;
+    padding: 0;
+  }
+  body main .containerServicios .boxCards .containerDescripcion {
+    width: 100%;
   }
   body main .seccionHistoria .tituloHistoria {
     text-align: center;
@@ -580,6 +594,10 @@ body .descripcion .precio {
   }
   body main .contenedorContacto .contactoUbicacion iframe {
     width: 100%;
+  }
+  body footer {
+    flex-direction: column;
+    padding: 20px 40px;
   }
 }
 

@@ -1,142 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre nuestros servicios para llevar tus eventos a otro nivel. Ofrecemos barras de cerveza en eventos, cerveza personalizada única y alquiler de barriles de cerveza. Convierte tus ocasiones especiales en experiencias inolvidables con ECB S.A.">
-    <meta name="keywords" content="servicios, barra de cerveza en eventos, cerveza personalizada, alquiler de barriles de cerveza, eventos, cerveza artesanal, barriles, evento especial, cerveza única, cerveza fresca, barriles de cerveza">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon">
-    <title>Servicios - Lleva tus eventos a otro nivel</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Erik Gaston Rios">
+  <meta name="description"
+    content="Descubre nuestros servicios para llevar tus eventos a otro nivel. Ofrecemos barras de cerveza en eventos, cerveza personalizada única y alquiler de barriles de cerveza. Convierte tus ocasiones especiales en experiencias inolvidables con ECB S.A.">
+  <meta name="keywords"
+    content="servicios, barra de cerveza en eventos, cerveza personalizada, alquiler de barriles de cerveza, eventos, cerveza artesanal, barriles, evento especial, cerveza única, cerveza fresca, barriles de cerveza">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon">
+  <title>Servicios - Lleva tus eventos a otro nivel</title>
 </head>
+
 <body>
-    <header>
-        <!-- BS -->
-        <nav class="navbar navbar-expand-lg navegacion">
-            <div class="container-fluid">
-              <a href="../index.html">
-                <img src="../img/logo.webp" class="logo" alt="Logo de la pagina que contiene una ilustracion de cervezas y mani">  
+  <header>
+    <!-- BS -->
+    <nav class="navbar navbar-expand-lg navegacion">
+      <div class="container-fluid">
+        <a href="../index.html">
+          <img src="../img/logo.webp" class="logo"
+            alt="Logo de la pagina que contiene una ilustracion de cervezas y mani">
+        </a>
+        <button class="navbar-toggler btnNav" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item navTextColor">
+              <a aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="dropdown navTextColor">
+              <a class="dropdown-toggle navTextColor" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Productos
               </a>
-              <button class="navbar-toggler btnNav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item navTextColor">
-                    <a aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="dropdown navTextColor">
-                    <a class="dropdown-toggle navTextColor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Productos
-                    </a>
-                    <ul class="dropdown-menu subLista">
-                      <li><a href="cervezas.html">Cervezas</a></li>
-                      <li><a href="snacks.html">Snacks</a></li>
-                      <li><a href="promociones.html">Promociones</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item navTextColor">
-                    <a href="servicios.html">Servicios</a>
-                  </li>
-                  <li class="nav-item navTextColor">
-                    <a href="nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item navTextColor">
-                    <a href="contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        <!-- BS -->
-    </header>
-
-    <main>
-        <h1 class="tituloServicios">Nuestros servicios</h1>
-
-        <div class="containerServicios">
-          <div class="boxCards row">
-            <div class="containerImg col-sm-12 col-md-6">
-                <img class="imgServicios" src="../img/barra-de-cerveza.webp" alt="Imagen de un vaso llenandose de cerveza">
-            </div>
-            <div class="containerDescripcion col-sm-12 col-md-6">
-                <h2 class="tituloCardServicios">Barra de cerveza en eventos</h2>
-                <p class="parrafoServicios">¡Bienvenidos a El Crack de la Birra! Estamos entusiasmados de presentarte nuestra estrella: la Barra de Cerveza en Eventos. Sumérgete en la cerveza artesanal y brinda a tus invitados calidad, diversidad y hospitalidad de primer nivel. ¡Transforma tus eventos en memorables experiencias!</p>
-                
-                <h3 class="subTituloServicios">Lo que incluye el servicio:</h3>
-                <ul>
-                  <li class="listaServicios">Amplia gama de cervezas de calidad</li>
-                  <li class="listaServicios">Barra personalizada segun el evento</li>
-                  <li class="listaServicios">Cerveceros expertos para guiar a los invitados</li>
-                  <li class="listaServicios">Servicio de alta calidad</li>
-                  <li class="listaServicios">Accesorios e instrumentos de ultima tecnologia</li>
-                </ul>
-                <div class="containerBtnServicios">
-                  <button class="btnServicios">Consultar</button>
-                </div>
-                
-            </div>
-          </div>
-
-          <div class="row boxCards ">
-            <div class="containerImg col-sm-12 col-md-6">
-                <img class="imgServicios" src="../img/cerveza-eventos.webp" alt="Imagen de personas brindando con cerveza">
-            </div>
-            <div class="containerDescripcion col-sm-12 col-md-6">
-                <h2 class="tituloCardServicios">Cerveza Personalizada para Eventos</h2>
-                <p class="parrafoServicios">Nuestra Cerveza Personalizada para Eventos es un tributo a la originalidad y la creatividad. Nos asociamos contigo para crear una cerveza única que refleje la esencia de tu evento. Ya sea una boda, una fiesta corporativa o cualquier ocasión especial, esta cerveza lleva tu firma y cuenta tu historia.</p>
-                
-                <h3 class="subTituloServicios">Lo que incluye el servicio:</h3>
-                <ul>
-                  <li class="listaServicios">Sabor a Medida</li>
-                  <li class="listaServicios">Diseño de Etiqueta Personalizada</li>
-                  <li class="listaServicios">Vasos personalizados</li>
-                  <li class="listaServicios">Experiencia Sensorial</li>
-                  <li class="listaServicios">Historia en Cada Botella</li>
-                </ul>
-                <div class="containerBtnServicios">
-                  <button class="btnServicios">Consultar</button>
-                </div>
-            </div>
-          </div>
-
-          <div class="boxCards row">
-          <div class="containerImg col-sm-12 col-md-6">
-              <img class="imgServicios" src="../img/barriles-cervezas.webp" alt="Imagen de barriles de cerveza">
-          </div>
-          <div class="containerDescripcion col-sm-12 col-md-6">
-              <h2 class="tituloCardServicios">Alquiler de Barriles de Cerveza</h2>
-              <p class="parrafoServicios">Nuestro servicio de Alquiler de Barriles de Cerveza es la respuesta para aquellos que buscan ofrecer a sus invitados una cerveza fresca y deliciosa directamente desde el barril. Imagine el placer de servir cerveza artesanal de alta calidad de una manera que sorprenderá y deleitará a todos los asistentes.</p>
-              
-              <h3 class="subTituloServicios">Lo que incluye el servicio:</h3>
-              <ul>
-                <li class="listaServicios">Amplia gama de estilos de cerveza para elegir</li>
-                <li class="listaServicios">Trabajamos con los mejores barriles</li>
-                <li class="listaServicios">Instalación realizada por expertos</li>
-                <li class="listaServicios">Ideal para Eventos de Cualquier Tamaño</li>
-                <li class="listaServicios">Brindamos soporte técnico durante todo el evento</li>
+              <ul class="dropdown-menu subLista">
+                <li><a href="cervezas.html">Cervezas</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
               </ul>
-              <div class="containerBtnServicios">
-                <button class="btnServicios">Consultar</button>
-              </div>
+            </li>
+            <li class="nav-item navTextColor">
+              <a href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item navTextColor">
+              <a href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item navTextColor">
+              <a href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- BS -->
+  </header>
+
+  <main>
+    <h1 class="tituloServicios">Nuestros servicios</h1>
+
+    <section class="containerServicios">
+      <article class="boxCards row">
+        <div class="containerImg col-sm-12 col-md-6">
+          <img class="imgServicios" src="../img/barra-de-cerveza.webp" alt="Imagen de un vaso llenandose de cerveza">
+        </div>
+        <div class="containerDescripcion col-sm-12 col-md-6">
+          <h2 class="tituloCardServicios">Barra de cerveza en eventos</h2>
+          <p class="parrafoServicios">¡Bienvenidos a El Crack de la Birra! Estamos entusiasmados de presentarte nuestra
+            estrella: la Barra de Cerveza en Eventos. Sumérgete en la cerveza artesanal y brinda a tus invitados
+            calidad, diversidad y hospitalidad de primer nivel. ¡Transforma tus eventos en memorables experiencias!</p>
+
+          <h3 class="subTituloServicios">Lo que incluye el servicio:</h3>
+          <ul>
+            <li class="listaServicios">Amplia gama de cervezas de calidad</li>
+            <li class="listaServicios">Barra personalizada segun el evento</li>
+            <li class="listaServicios">Cerveceros expertos para guiar a los invitados</li>
+            <li class="listaServicios">Servicio de alta calidad</li>
+            <li class="listaServicios">Accesorios e instrumentos de ultima tecnologia</li>
+          </ul>
+          <div class="containerBtnServicios">
+            <button class="btnServicios">Consultar</button>
           </div>
+
+        </div>
+      </article>
+
+      <article class="row boxCards ">
+        <div class="containerImg col-sm-12 col-md-6">
+          <img class="imgServicios" src="../img/cerveza-eventos.webp" alt="Imagen de personas brindando con cerveza">
+        </div>
+        <div class="containerDescripcion col-sm-12 col-md-6">
+          <h2 class="tituloCardServicios">Cerveza Personalizada para Eventos</h2>
+          <p class="parrafoServicios">Nuestra Cerveza Personalizada para Eventos es un tributo a la originalidad y la
+            creatividad. Nos asociamos contigo para crear una cerveza única que refleje la esencia de tu evento. Ya sea
+            una boda, una fiesta corporativa o cualquier ocasión especial, esta cerveza lleva tu firma y cuenta tu
+            historia.</p>
+
+          <h3 class="subTituloServicios">Lo que incluye el servicio:</h3>
+          <ul>
+            <li class="listaServicios">Sabor a Medida</li>
+            <li class="listaServicios">Diseño de Etiqueta Personalizada</li>
+            <li class="listaServicios">Vasos personalizados</li>
+            <li class="listaServicios">Experiencia Sensorial</li>
+            <li class="listaServicios">Historia en Cada Botella</li>
+          </ul>
+          <div class="containerBtnServicios">
+            <button class="btnServicios">Consultar</button>
           </div>
         </div>
-    </main>
+      </article>
 
-    <footer>
-        <a class="linkFooter" href="https://www.instagram.com/" target="_blank">Instagram</a>
-        <a class="linkFooter" href="https://twitter.com/" target="_blank">Twitter</a>
-        <a class="linkFooter" href="https://www.tiktok.com/es/" target="_blank">Tiktok</a>
-        <a class="linkFooter" href="https://es-la.facebook.com/" target="_blank">Facebook</a>
-        
-        <p class="copyright">Copyright © 2023 ECB S.A</p>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <article class="boxCards row">
+        <div class="containerImg col-sm-12 col-md-6">
+          <img class="imgServicios" src="../img/barriles-cervezas.webp" alt="Imagen de barriles de cerveza">
+        </div>
+        <div class="containerDescripcion col-sm-12 col-md-6">
+          <h2 class="tituloCardServicios">Alquiler de Barriles de Cerveza</h2>
+          <p class="parrafoServicios">Nuestro servicio de Alquiler de Barriles de Cerveza es la respuesta para aquellos
+            que buscan ofrecer a sus invitados una cerveza fresca y deliciosa directamente desde el barril. Imagine el
+            placer de servir cerveza artesanal de alta calidad de una manera que sorprenderá y deleitará a todos los
+            asistentes.</p>
+
+          <h3 class="subTituloServicios">Lo que incluye el servicio:</h3>
+          <ul>
+            <li class="listaServicios">Amplia gama de estilos de cerveza para elegir</li>
+            <li class="listaServicios">Trabajamos con los mejores barriles</li>
+            <li class="listaServicios">Instalación realizada por expertos</li>
+            <li class="listaServicios">Ideal para Eventos de Cualquier Tamaño</li>
+            <li class="listaServicios">Brindamos soporte técnico durante todo el evento</li>
+          </ul>
+          <div class="containerBtnServicios">
+            <button class="btnServicios">Consultar</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="redesSociales">
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram linkFooter"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter linkFooter"></i></a>
+      <a href="https://www.tiktok.com/es/" target="_blank"><i class="fa-brands fa-tiktok linkFooter"></i></a>
+      <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook linkFooter"></i></a>
+    </div>
+
+    <div class="legalesCopy">
+      <p class="copyright">Copyright © 2023 ECB S.A - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5caac7fd81.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
