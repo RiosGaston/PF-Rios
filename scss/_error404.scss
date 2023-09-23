@@ -1,0 +1,56 @@
+body {
+    .containerError404 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .tituloError404 {
+            font-size: $tituloPrincipal;
+            color: $colorSecundario1;
+            text-align: center;
+            margin: 25px 0;
+        }   
+
+        .descripcionError404 {
+            .subtituloError404 {
+                width: 70%;
+                margin: 0 auto;
+                font-size: $subtitulo;
+                font-weight: 400;
+                color: $colorSecundario3;
+                text-align: center;
+                
+            }
+        }
+
+        .btnVolverAlInicio {
+            align-self: center;
+            margin-top: 20px;
+            text-decoration: none;
+            border: none;
+            border-radius: 15px;
+            padding: 10px 20px;
+            margin-bottom: 15px;
+            background-color: $colorSecundario3;
+            color: $colorSecundario1;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.5s;
+            &:hover {
+                background-color: $colorSecundario1;
+                color: $colorSecundario3;
+                transform: scale(1.2);
+                transition: transform 0.5s;
+            }
+        }
+    }
+
+    .imgError404 {
+        height: calc(100vh - 65px);
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
