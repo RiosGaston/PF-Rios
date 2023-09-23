@@ -147,10 +147,28 @@
 
 
         /* Estilos resposive error404.html */
+        .containerError404 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .descripcionError404 {
+                text-align: center;
+                width: 90%;
+                .subtituloError404 {
+                    min-width: 100%;
+                }
+            }
+
+            .btnVolverAlInicio {
+                width: 140px;
+                text-align: center;
+            }
+        }
 
         .imgError404 {
-            max-width: 100vw;
-            max-height: 65vh;
+            max-width: 100%;
+            max-height: auto;
         }
 
 
@@ -280,9 +298,29 @@
 
         /* Estilos resposive error404.html */
 
+        /* Estilos resposive error404.html */
+        .containerError404 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .descripcionError404 {
+                text-align: center;
+                width: 90%;
+                .subtituloError404 {
+                    min-width: 100%;
+                }
+            }
+
+            .btnVolverAlInicio {
+                width: 140px;
+                text-align: center;
+            }
+        }
+
         .imgError404 {
-            max-width: 100vw;
-            max-height: 65vh;
+            max-width: 100%;
+            max-height: auto;
         }
 
 

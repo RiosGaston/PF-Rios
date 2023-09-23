@@ -517,9 +517,26 @@ body .descripcion .precio {
   body main .contenedorContacto .contactoUbicacion iframe {
     width: 90%;
   }
+  body .containerError404 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .containerError404 .descripcionError404 {
+    text-align: center;
+    width: 90%;
+  }
+  body .containerError404 .descripcionError404 .subtituloError404 {
+    min-width: 100%;
+  }
+  body .containerError404 .btnVolverAlInicio {
+    width: 140px;
+    text-align: center;
+  }
   body .imgError404 {
-    max-width: 100vw;
-    max-height: 65vh;
+    max-width: 100%;
+    max-height: auto;
   }
   body footer {
     display: flex;
@@ -532,6 +549,7 @@ body .descripcion .precio {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body {
+    /* Estilos resposive error404.html */
     /* Estilos resposive error404.html */
     /* Estilos resposive del footer */
   }
@@ -607,9 +625,26 @@ body .descripcion .precio {
   body main .contenedorContacto .contactoUbicacion iframe {
     width: 100%;
   }
+  body .containerError404 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .containerError404 .descripcionError404 {
+    text-align: center;
+    width: 90%;
+  }
+  body .containerError404 .descripcionError404 .subtituloError404 {
+    min-width: 100%;
+  }
+  body .containerError404 .btnVolverAlInicio {
+    width: 140px;
+    text-align: center;
+  }
   body .imgError404 {
-    max-width: 100vw;
-    max-height: 65vh;
+    max-width: 100%;
+    max-height: auto;
   }
   body footer {
     flex-direction: column;
