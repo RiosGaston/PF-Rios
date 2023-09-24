@@ -25,3 +25,6 @@ Aquí, cada botella cuenta una historia única. Desde las cervezas de renombrada
 
 
 ## Links 🔗
+
+- [Github page](https://riosgaston.github.io/PreEntrega3-Rios/)
+- [Netlify deploy](https://elcrackdelabirra.netlify.app/)
