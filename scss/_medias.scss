@@ -16,7 +16,7 @@
                 text-align: center;
             }
             margin-bottom: 100px;
-            /* estilos responsive index.html */
+            // estilos responsive index.html */
             .containerBienvenida {
                 .fraseBienvenida {
                     width: 95%;
@@ -50,23 +50,27 @@
             }
             
             .seccionNavImg {
-                .containerNavImgProductos {
-                    flex-direction: column;
-            
-                    .navProductos {
-                        margin: 0 0 15px 0;
-            
-                        a {
-                            .navImg {
-                                width: 100%;
-                                margin: 40px 0;
-                            }
+                flex-direction: column;
+                align-items: center;
+              
+                .navProductos {
+                    width: 85%;
+                    margin: 25px 0;
+
+                    .tituloNavProductos {
+                        margin: 15px 0 40px 0;
+                    }
+              
+                    a {
+                        .navImg {
+                        width: 100%;
                         }
                     }
                 }
             }
+              
     
-            /* Estilos responsive productos */
+            // Estilos responsive productos
     
             .containerProductos {
                 grid-template-columns: repeat(1 , 1fr);
@@ -76,7 +80,7 @@
                 }
             }
     
-            /* Estilos responsive servicios.html */
+            // Estilos responsive servicios.html
 
             .containerServicios {
                 .boxCards{
@@ -91,7 +95,7 @@
                 }
             }
     
-            /* Estilos responsive nosotros.html */
+            // Estilos responsive nosotros.html
     
             .seccionHistoria {
                 .tituloHistoria {
@@ -116,7 +120,7 @@
                 }
             }
     
-            /* Estilos responsive contacto.html */
+            // Estilos responsive contacto.html
     
             .contenedorContacto {
                 display: flex;
@@ -146,7 +150,7 @@
         }
 
 
-        /* Estilos resposive error404.html */
+        // Estilos resposive error404.html
         .containerError404 {
             width: 100%;
             display: flex;
@@ -172,7 +176,7 @@
         }
 
 
-        /* Estilos resposive del footer */
+        // Estilos resposive del footer
 
         footer {
             display: flex;
@@ -197,7 +201,7 @@
             h1 {
                 text-align: center;
             }
-            /* Estilos responsive index.html */
+            // Estilos responsive index.html
             .containerBienvenida {
                 .fraseBienvenida {
                     width: 80%;
@@ -213,19 +217,14 @@
                 }
             }
 
-            .containerNavImgProductos {
-                .navProductos {
-                    margin: 0 200px;
-                }
-            }
 
-            /* Estilos responsive productos */
+            // Estilos responsive productos
 
             .containerProductos {
                 grid-template-columns: repeat(2 , 1fr);
             }
 
-            /* Estilos responsive servicios.html */
+            // Estilos responsive servicios.html
 
             .containerServicios {
                 .boxCards{
@@ -240,7 +239,7 @@
                 }
             }
 
-            /* Estilos responsive nosotros.html */
+            // Estilos responsive nosotros.html
 
             .seccionHistoria {
                 .tituloHistoria {
@@ -266,7 +265,7 @@
                 }
             }
 
-            /* Estilos responsive contacto.html */
+            // Estilos responsive contacto.html
 
             .contenedorContacto {
                 display: flex;
@@ -296,9 +295,8 @@
         }
 
 
-        /* Estilos resposive error404.html */
+        // Estilos resposive error404.html
 
-        /* Estilos resposive error404.html */
         .containerError404 {
             width: 100%;
             display: flex;
@@ -324,7 +322,7 @@
         }
 
 
-        /* Estilos resposive del footer */
+        // Estilos resposive del footer
 
         footer {
             flex-direction: column;

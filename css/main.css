@@ -160,20 +160,20 @@ body .descripcion .precio {
   justify-content: center;
   width: 100%;
 }
-.seccionNavImg .containerNavImgProductos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 85%;
-}
-.seccionNavImg .containerNavImgProductos .navProductos {
+.seccionNavImg .navProductos {
   margin: 25px 15px;
+  width: 33%;
+  text-align: center;
 }
-.seccionNavImg .containerNavImgProductos .navProductos .navImg {
+.seccionNavImg .navProductos .tituloNavProductos {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.seccionNavImg .navProductos .navImg {
   width: 100%;
   height: 90%;
 }
-.seccionNavImg .containerNavImgProductos .navProductos .navImg:hover {
+.seccionNavImg .navProductos .navImg:hover {
   transform: scale(1.1);
   transition: transform 1s;
 }
@@ -411,10 +411,6 @@ body .descripcion .precio {
 }
 
 @media (max-width: 767px) {
-  body {
-    /* Estilos resposive error404.html */
-    /* Estilos resposive del footer */
-  }
   body header {
     height: auto;
   }
@@ -423,11 +419,6 @@ body .descripcion .precio {
   }
   body main {
     margin-bottom: 100px;
-    /* estilos responsive index.html */
-    /* Estilos responsive productos */
-    /* Estilos responsive servicios.html */
-    /* Estilos responsive nosotros.html */
-    /* Estilos responsive contacto.html */
   }
   body main h1 {
     text-align: center;
@@ -456,15 +447,19 @@ body .descripcion .precio {
     margin-top: 25px;
     text-align: center;
   }
-  body main .seccionNavImg .containerNavImgProductos {
+  body main .seccionNavImg {
     flex-direction: column;
+    align-items: center;
   }
-  body main .seccionNavImg .containerNavImgProductos .navProductos {
-    margin: 0 0 15px 0;
+  body main .seccionNavImg .navProductos {
+    width: 85%;
+    margin: 25px 0;
   }
-  body main .seccionNavImg .containerNavImgProductos .navProductos a .navImg {
+  body main .seccionNavImg .navProductos .tituloNavProductos {
+    margin: 15px 0 40px 0;
+  }
+  body main .seccionNavImg .navProductos a .navImg {
     width: 100%;
-    margin: 40px 0;
   }
   body main .containerProductos {
     grid-template-columns: repeat(1, 1fr);
@@ -548,20 +543,8 @@ body .descripcion .precio {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  body {
-    /* Estilos resposive error404.html */
-    /* Estilos resposive error404.html */
-    /* Estilos resposive del footer */
-  }
   body header {
     height: auto;
-  }
-  body main {
-    /* Estilos responsive index.html */
-    /* Estilos responsive productos */
-    /* Estilos responsive servicios.html */
-    /* Estilos responsive nosotros.html */
-    /* Estilos responsive contacto.html */
   }
   body main h1 {
     text-align: center;
@@ -574,9 +557,6 @@ body .descripcion .precio {
   }
   body main .containerSecciones .boxSecciones .parrafoSeccion {
     margin-right: 0;
-  }
-  body main .containerNavImgProductos .navProductos {
-    margin: 0 200px;
   }
   body main .containerProductos {
     grid-template-columns: repeat(2, 1fr);
